@@ -1,0 +1,28 @@
+Tehtävä 1
+
+Käyttäjät:
+-Asiakkaat
+-Vastuuhenkilö
+-Opiskelijat
+-Yliopiston opiskelijarekisteri
+-Ohjaajat
+
+Käyttötapaukset:
+
+1. Asiakas lähettää tehtäväkuvauksen: Asiakas kirjautuu sisään järjestelmään, valitsee valikosta uuden tehtävän, kirjoittaa tehtäväkuvauksen ja tallentaa sen.
+
+2. Vastuuhenkilö avaa ilmoittautumisen: Vastuuhenkilö kirjautuu sisään järjestelmään, valitsee valikosta valmiit tehtävät ja laittaa ne kaikille näkyviksi. Vastuuhenkilö avaa ilmoittautumisen tehtäväkuvausten määrittelemiin ryhmiin. Vastuuhenkilö määrittelee jokaiselle ryhmälle ohjaajan ja ohjaajalle salasanan ryhmän asetuksista.
+
+3. Opiskelija ilmoittautuu ryhmään: Opiskelija kirjautuu sisään järjestelmään ja valitsee valikosta ryhmien selauksen. Opiskelija etsii mieleisensä tehtävän ja klikkaa tehtävän vieressä olevaa ilmoittaudu -painiketta ja syöttää AD-tunnuksensa kirjautumiskenttään. Opiskelija saa vahvistuksen ilmoittautumisestaan. Järjestelmä ottaa yhteyden yliopiston opiskelijarekisteriin ja kopioi sieltä opiskelijan tiedot. Järjestelmä lähettää vahvistusviestin opiskelijan sähköpostiin.
+
+4. Ohjaaja liittyy ryhmään: Ohjaaja kirjautuu sisään, menee tilinsä asetuksiin, klikkaa kirjaudu ohjaajana -painiketta, syöttää ohjattavan ryhmänsä nimen/tunnuksen ja kurssin vastuuhenkilöltä saamansa salasanan. Ohjaaja saa vahvistuksen onnistuneesta ryhmään liittymisestä.
+
+5. Vastuuhenkilö laatii vertaisarvioinnin: Vastuuhenkilö kirjautuu järjestelmään ja valitsee valikosta laadi vertaisarviointi -kohdan. Vastuuhenkilö kirjoittaa kysymyksen, valitsee vastauksen tyypin (monivalinta/vapaa vastaus), valitsee mahdollisten vaihtoehtojen määrän, kirjoittaa mahdolliset vaihtoehdot ja halutessaan painaa lisää kysymys -painiketta. Tehtyään riittävän monta kysymystä vastuuhenkilö tallentaa vertaisarvioinnin, jolloin se aukeaa opiskelijoiden täytettäväksi. Vastuuhenkilö saa vahvistuksen onnistuneesta tallennuksesta.
+
+6. Opiskelija täyttää vertaisarvioinnin: Opiskelija kirjautuu sisään ja painaa vertaisarvioinnit-painiketta. Opiskelija valitsee joko väliarvioinnin tai loppuarvioinnin. Avautuvassa ikkunassa opiskelija näkee muut ryhmäläisensä, ja jokaisen ryhmäläisen nimeä painamalla aukeaa vertaisarviointilomake. Opiskelija täyttää lomakkeen ja painaa tallenna-näppäintä. Opiskelija saa vahvistuksen, että arviointi on tallennettu.
+
+7. Ohjaaja tarkastelee vertaisarviointeja: Ohjaaja kirjautuu sisään, klikkaa vertaisarvioinnit-painiketta ja valitsee avautuvasta ikkunasta oman ryhmänsä. Aukeaa lista ryhmän opiskelijoista, joiden nimeä klikkaamalla saa yhteenvedon tästä opiskelijasta tehdyistä vertaisarvioinneista ja niiden tekijöistä.
+
+8. Asiakas kirjoittaa arvion: Asiakas kirjautuu sisään järjestelmään, valitsee valikosta arvion kirjoittamisen, valitsee jonkin antamista tehtävistään listasta (sama asiakas voinee lähettää alussa useammankin tehtävän?), kirjoittaa arvion ja painaa tallenna -näppäintä. Asiakas saa vahvistuksen siitä, että arvio on tallennettu.
+
+9. Vastuuhenkilö lukee arviot: Vastuuhenkilö kirjautuu sisään järjestelmään ja valitsee arvioinnit -kohdan valikosta. Avautuu lista ryhmistä. Ryhmän valittuaan vastuuhenkilö valitsee joko väliarvioinnit, loppuarvioinnit tai asiakkaan arvioinnin. Valinnan tekemällä saa listan opiskelijoista (väliarviointi/loppuarviointi) ja heistä tehdyistä arvioista, tai asiakkaan tekemän arvioinnin.
