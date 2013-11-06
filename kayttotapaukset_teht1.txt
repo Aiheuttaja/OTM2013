@@ -9,11 +9,11 @@ Käyttäjät:
 
 Käyttötapaukset:
 
-1. Asiakas lähettää tehtäväkuvauksen: Asiakas kirjautuu sisään järjestelmään, valitsee valikosta uuden tehtävän, kirjoittaa tehtäväkuvauksen ja tallentaa sen.
+1. Asiakas lähettää tehtäväkuvauksen: Asiakas kirjautuu sisään järjestelmään, valitsee valikosta uuden tehtävän, kirjoittaa tehtäväkuvauksen ja tallentaa sen. Asiakas saa vahvistuksen tallennuksen onnistumisesta.
 
 2. Vastuuhenkilö avaa ilmoittautumisen: Vastuuhenkilö kirjautuu sisään järjestelmään, valitsee valikosta valmiit tehtävät ja laittaa ne kaikille näkyviksi. Vastuuhenkilö avaa ilmoittautumisen tehtäväkuvausten määrittelemiin ryhmiin. Vastuuhenkilö määrittelee jokaiselle ryhmälle ohjaajan ja ohjaajalle salasanan ryhmän asetuksista.
 
-3. Opiskelija ilmoittautuu ryhmään: Opiskelija kirjautuu sisään järjestelmään ja valitsee valikosta ryhmien selauksen. Opiskelija etsii mieleisensä tehtävän ja klikkaa tehtävän vieressä olevaa ilmoittaudu -painiketta ja syöttää AD-tunnuksensa kirjautumiskenttään. Opiskelija saa vahvistuksen ilmoittautumisestaan. Järjestelmä ottaa yhteyden yliopiston opiskelijarekisteriin ja kopioi sieltä opiskelijan tiedot. Järjestelmä lähettää vahvistusviestin opiskelijan sähköpostiin.
+3. Opiskelija ilmoittautuu ryhmään: Opiskelija avaa järjestelmän etusivun ja kirjautuu AD-tunnuksillaan sisään. Järjestelmä ottaa yhteyden yliopiston opiskelijarekisteriin ja kopioi sieltä opiskelijan tiedot. Opiskelija etsii mieleisensä tehtävän ja klikkaa tehtävän vieressä olevaa ilmoittaudu -painiketta. Järjestelmä pyytää vahvistamaan ilmoittautumisen. Opiskelija hyväksyy ilmoittautumisen. Opiskelija saa vahvistuksen ilmoittautumisestaan ja järjestelmä lähettää vahvistusviestin opiskelijan sähköpostiin.
 
 4. Ohjaaja liittyy ryhmään: Ohjaaja kirjautuu sisään, menee tilinsä asetuksiin, klikkaa kirjaudu ohjaajana -painiketta, syöttää ohjattavan ryhmänsä nimen/tunnuksen ja kurssin vastuuhenkilöltä saamansa salasanan. Ohjaaja saa vahvistuksen onnistuneesta ryhmään liittymisestä.
 

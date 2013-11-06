@@ -1,0 +1,81 @@
+Tehtävä 2
+
+Käyttötapaus: Asiakas lähettää tehtäväkuvauksen
+
+Käyttäjä: Asiakas
+Tavoite: Saada kuvauksen mukainen ohjelmisto työryhmältä
+Laukaisija: Asiakkaan tarve
+Esiehto: Asiakas on saanut kurssin vastuuhenkilöltä tunnukset tietojärjestelmään
+Jälkiehto: Asiakkaan laatima tehtäväkuvaus on tallentunut järjestelmään
+
+Käyttötapauksen kulku:
+
+	1. Asiakas avaa tietojärjestelmän etusivun.
+	2. Asiakas kirjautuu sisään kurssin vastuuhenkilöltä saamilla 	tunnuksillaan.
+	3. Järjestelmä näyttää listan mahdollisista toiminnoista.
+	4. Asiakas valitsee listasta toiminnon "Uusi tehtävä".
+	5. Järjestelmä pyytää asiakasta kirjoittamaan kuvauksen tehtävästä.
+	6. Asiakas kirjoittaa tehtäväkuvauksen ja tallentaa sen "Tallenna"-
+	   painikkeella.
+	7. Järjestelmä ilmoittaa asiakkaalle tallennuksen onnistumisesta.
+
+Poikkeuksellinen toiminta:
+
+	2a. Kirjautuminen ei onnistu:
+		1. Tietojärjestelmä antaa virheilmoituksen ja käskee 				tarkistamaan, että käyttäjätunnus ja salasana ovat oikein. 			2. Paluu kohtaan 2.
+	4b. Uusien tehtävien deadline on umpeutunut:
+		1. Järjestelmä ilmoittaa, että uusia tehtäviä ei voi enää 			lähettää.
+		2. Paluu kohtaan 3.
+	7a. Tallennus epäonnistui:
+		1. Tietojärjestelmä antaa virheilmoituksen.
+		2. Paluu kohtaan 6., johon on valmiiksi täytetty käyttäjän 		äsken kirjoittama teksti.
+
+----------
+
+
+Käyttötapaus: Opiskelija liittyy ryhmään
+
+Käyttäjä: Opiskelija
+Tavoite: Tuottaa ohjelmisto mieleisessään ryhmässä
+Laukaisija: Opiskelijan tarve
+Esiehto: Opiskelijalla on opinto-oikeus Helsingin Yliopistossa sekä yliopiston AD-tunnukset
+Jälkiehto: Opiskelija on liittynyt mieleiseensä ryhmään.
+
+Käyttötapauksen kulku:
+
+	1. Opiskelija avaa tietojärjestelmän etusivun.
+	2. Opiskelija kirjautuu sisään AD-tunnuksillaan.
+	3. Järjestelmä näyttää listan mahdollisista toiminnoista.
+	4. Opiskelija valitsee "Selaa ryhmiä".
+	5. Opiskelija selaa ryhmiä ja valitsee mieleisensä.
+	6. Opiskelija klikkaa ryhmän vieressä olevaa "Liity ryhmään" 	-		-painiketta.
+	7. Järjestelmä pyytää opiskelijaa vahvistamaan liittymisensä.
+	8. Opiskelija vahvistaa liittymisensä painamalla "Kyllä"-painiketta 	tai peruu liittymisensä painamalla "Ei"-painiketta.
+
+Poikkeuksellinen toiminta:
+
+	2a. Kirjautuminen ei onnistu:
+		1. Tietojärjestelmä antaa virheilmoituksen ja käskee 				tarkistamaan, että käyttäjätunnus ja salasana ovat oikein.
+	2b. Opiskelijarekisteriin ei saada yhteyttä:
+		1. Tietojärjestelmä ilmoittaa, että opiskelijarekisteriin 			ei saada yhteyttä ja pyytää opiskelijaa yrittämään 				myöhemmin uudelleen.
+	6a. Ryhmä on täynnä:
+		1. Tietojärjestelmä ilmoittaa ryhmän olevan täynnä ja 				pyytää valitsemaan toisen ryhmän.
+		2. Paluu kohtaan 5.
+	6b. Ryhmiin ilmoittautuminen on umpeutunut:
+		1. Tietojärjestelmä ilmoittaa ryhmiin ilmoittautumisen 				olevan umpeutunut ja pyytää ottamaan yhteyttä kurssin 				vastuuhenkilöön.
+		2. Paluu kohtaan 5.
+	8a. Virhe ryhmään liittymisessä:
+		1. Tietojärjestelmä ilmoittaa virheestä ryhmään 				liittymisessä ja pyytää yrittämään uudelleen.
+		2. Paluu kohtaan 5.
+
+Tarkennuksia:
+
+	8a. Opiskelija vahvistaa liittymisensä:
+		1. Opiskelija painaa "Kyllä" -painiketta.
+		2. Opiskelija saa vahvistuksen ilmoittautumisestaan.
+		3. Järjestelmä lähettää vahvistusviestin opiskelijan 				sähköpostiin.
+			3a. Sähköpostia ei voitu lähettää:
+				1. Järjestelmä pyytää opiskelijaa 						ottamaan yhteyttä kurssin vastuuhenkilöön.
+	8b. Opiskelija peruu liittymisensä:
+		1. Opiskelija painaa "Ei" -painiketta.
+		2. Paluu kohtaan 5.
