@@ -11,7 +11,7 @@ Jälkiehto: Asiakkaan laatima tehtäväkuvaus on tallentunut järjestelmään
 Käyttötapauksen kulku:
 
 	1. Asiakas avaa tietojärjestelmän etusivun.
-	2. Asiakas kirjautuu sisään kurssin vastuuhenkilöltä saamilla 	tunnuksillaan.
+	2. Asiakas kirjautuu sisään kurssin vastuuhenkilöltä saamilla 			tunnuksillaan.
 	3. Järjestelmä näyttää listan mahdollisista toiminnoista.
 	4. Asiakas valitsee listasta toiminnon "Uusi tehtävä".
 	5. Järjestelmä pyytää asiakasta kirjoittamaan kuvauksen tehtävästä.
@@ -28,7 +28,7 @@ Poikkeuksellinen toiminta:
 		2. Paluu kohtaan 3.
 	7a. Tallennus epäonnistui:
 		1. Tietojärjestelmä antaa virheilmoituksen.
-		2. Paluu kohtaan 6., johon on valmiiksi täytetty käyttäjän 		äsken kirjoittama teksti.
+		2. Paluu kohtaan 6., johon on valmiiksi täytetty käyttäjän 			äsken kirjoittama teksti.
 
 ----------
 
