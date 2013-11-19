@@ -1,0 +1,84 @@
+1
+
+Käyttötapaus asiakas lähettää tehtäväkuvauksen
+Käyttäjä: asiakas
+Käyttötapauksen kulku: Asiakas laatii tehtäväkuvauksen, kirjautuu järjestelmään ja lähettää tehtäväkuvauksen.
+
+Käyttötapaus opiskelija ilmoittautuu ryhmään
+Käyttäjä: opiskelija
+Käyttötapauksen kulku: Opiskelija valitsee ryhmän, tunnistautuu ja ilmoittautuu. Kuittaus ilmoittautumisen onnistumisesta.
+
+Käyttötapaus opiskelijan tiedot siirretään opintorekisteristä järjestelmään
+Käyttäjä: opintorekisteri
+Käyttötapauksen kulku: Opiskelijan ilmoittautuessa järjestelmä luo yhteyden opiskelijarekisteriin. Tunnistuksen perusteella järjestelmä noutaa opiskelijan tiedot ja tallentaa ne.
+
+Käyttötapaus opiskelija tekee vertaisarvioinnin
+Käyttäjä: opiskelija
+Käyttötapauksen kulku: Opiskelija kirjautuu järjestelmään, valitsee ryhmänsä jäsenen ja vastaa vertaisarviointikysymyksiin. Järjestelmä tallentaa vastaukset, ja ilmoittaa siitä opiskelijalle.
+
+Käyttötapaus asiakas tekee loppuarvion
+Käyttäjä: asiakas
+Käyttötapauksen kulku: Asiakas kirjautuu järjestelmään, vastaa arviointikysymyksiin ryhmästään, ja järjestelmä tallentaa ne. Kuittaus vastausten tallentamisesta.
+
+Käyttötapaus vastuuhenkilö laittaa tehtäväkuvaukset näkyville
+Käyttäjä: vastuuhenkilö
+Käyttötapauksen kulku: Vastuuhenkilö kirjautuu järjestelmään ja muuttaa tehtäväkuvausten näkyvyyden opiskelijoille.
+
+Käyttötapaus vastuuhenkilö laatii arviointikysymykset
+Käyttäjä: vastuuhenkilö
+Käyttötapauksen kulku: Vastuuhenkilö kirjautuu järjestelmään, luo uuden kyselyn laatimillaan kysymyksillä, ja asettaa sen näkyvyyden opiskelijoille ja asiakkaille. Vastuuhenkilö asettaa opiskelijoiden vastausten näkyvyyden ryhmien ohjaajille ja asiakkaiden vastausten näkyvyyden itselleen.
+
+Käyttötapaus vastuuhenkilö katsoo arviointikysymysten vastaukset.
+Käyttäjä: vastuuhenkilö
+Käyttötapauksen kulku: Vastuuhenkilö kirjautuu järjestelmään ja katsoo arviointikysymysten vastaukset.
+
+Käyttötapaus ryhmän ohjaaja katsoo arviointikysymysten vastaukset.
+Käyttäjä: ryhmän ohjaaja
+Käyttötapauksen kulku: Ryhmän ohjaaja kirjautuu järjestelmään ja katsoo arviointikysymysten vastaukset.
+
+*KÄYTTÖTAPAUSKAAVIO*
+
+2
+Käyttötapaus opiskelijan tiedot siirretään opintorekisteristä järjestelmään
+Käyttäjä: opintorekisteri
+Tavoite: tallentaa opiskelijan tiedot rekisteristä
+Laukaisija: opiskelijan ilmoittautuminen
+Esiehto: opiskelija pystyy ilmoittautumaan
+Jälkiehto: opiskelijan tiedot ovat tallentuneet järjestelmään
+Käyttötapauksen kulku: 
+1. Järjestelmä huomaa ilmoittautumisen.
+2. Järjestelmä luo yhteyden opintorekisteriin.
+3. Järjestelmä etsii opiskelijan tiedot rekisteristä.
+4. Järjestelmä tallentaa tiedot.
+5. Järjestelmä katkaisee yhteyden opintorekisteriin.
+Poikkeuksellinen toiminta:
+2a. Yhteyttä ei voida luoda, jos ilmoittautuminen ei onnistu.
+
+Käyttötapaus opiskelija tekee vertaisarvioinnin
+Käyttäjä: opiskelija
+Tavoite: tehdä vertaisarviointi jokaisesta ryhmän jäsenestä
+Laukaisija: opiskelijan tarve
+Esiehto: opiskelija on ilmoittautunut ryhmään
+Jälkiehto: opiskelijan vastaukset arviointikysymyksiin on tallennettu
+Käyttötapauksen kulku:
+1. Opiskelija kirjautuu järjestelmään.
+2. Opiskelija valitsee vertaisarviointitoiminnon.
+3. Järjestelmä näyttää opiskelijan ryhmän jäsenet.
+4. Opiskelija valitsee ryhmänsä jäsenen.
+5. Järjestelmä näyttää vertaisarviointikysymykset.
+6. Opiskelija vastaa kysymyksiin.
+7. Järjestelmä kysyy, tallennetaanko vastaukset.
+8. Opiskelija valitsee tallennuksen.
+9. Järjestelmä tallentaa tiedot.
+10. Järjestelmä ilmoittaa opiskelijalle vastausten tallentumisesta.
+Poikkeuksellinen toiminta:
+2a. Opiskelija ei voi tehdä vertaisarviointia, jos hän ei ole ilmoittautunut ryhmään.
+5a. Järjestelmä ei voi näyttää kysymyksiä, jos niitä ei ole laadittu.
+10a. Järjestelmä ei voi ilmoittaa tallentumisesta, jos siinä on tapahtunut virhe.
+
+
+
+
+(4a. Opiskelija ei voi tehdä vertaisarviointia itselleen.
+4b. Opiskelija ei voi tehdä vertaisarviointia muiden ryhmien jäsenille.
+4c. Opiskelija ei voi tehdä vertaisarviointia jo arvioidulle jäsenelle.)
